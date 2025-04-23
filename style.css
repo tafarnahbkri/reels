@@ -1,0 +1,463 @@
+body {
+    background: linear-gradient(to right, #a2c2e8, #d5e1f4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* تنسيق الكونتينر */
+.login-container, .facebook-container {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+/* تنسيق الفورم */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* تنسيق المدخلات */
+input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    color: #333;
+}
+
+/* تنسيق الأزرار */
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #3897f0;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #318ce7;
+}
+
+.facebook-button {
+    background-color: #1877f2;
+    color: white;
+}
+
+.facebook-button:hover {
+    background-color: #145dbf;
+}
+
+.divider {
+    font-size: 14px;
+    color: #666;
+    margin: 15px 0;
+}
+
+.forgot {
+    font-size: 13px;
+    color: #00376b;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.fb-logo {
+    font-size: 38px;
+    color: #1877f2;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* تحسين التباين بين الألوان */
+input:focus {
+    border-color: #3897f0;
+    background-color: #eef7ff;
+}
+
+/* تنسيق خاص للحجم الصغير (الهاتف) */
+@media (max-width: 480px) {
+    body {
+        background: linear-gradient(to right, #d5e1f4, #a2c2e8);
+    }
+
+    .login-container, .facebook-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .fb-logo {
+        font-size: 30px;
+    }
+
+    .divider {
+        font-size: 12px;
+    }
+}
+/* تنسيق صفحة الترحيب */
+.welcome-page {
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.welcome-page h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.welcome-page button {
+    padding: 15px 25px;
+    background-color: #3897f0;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.welcome-page button:hover {
+    background-color: #318ce7;
+}
+
+/* تنسيق صفحة تسجيل الدخول */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    color: #333;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.login-container button {
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #3897f0;
+    color: white;
+    width: 100%;
+}
+
+.login-container button:hover {
+    background-color: #318ce7;
+}
+/* تنسيق صفحة الترحيب */
+.welcome-page {
+    background: linear-gradient(45deg, #f58529, #e1306c, #8a3ab9, #3897f0);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.welcome-page h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.welcome-page button {
+    padding: 15px 25px;
+    background-color: #ffffff;
+    color: #3897f0;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 30px;
+}
+
+.welcome-page button:hover {
+    background-color: #e1e1e1;
+}
+
+/* تنسيق صفحة تسجيل الدخول */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: block;
+}
+
+.login-container .logo {
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+
+.login-container input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    color: #333;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.login-container button {
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #3897f0;
+    color: white;
+    width: 100%;
+}
+
+.login-container button:hover {
+    background-color: #318ce7;
+}
+
+.divider {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+}
+
+.facebook-button {
+    padding: 14px;
+    background-color: #3b5998;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.facebook-button:hover {
+    background-color: #2d4373;
+}
+
+.forgot {
+    margin-top: 15px;
+    color: #3897f0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+/* تنسيق صفحة الترحيب */
+.welcome-page {
+    background: linear-gradient(45deg, #f58529, #e1306c, #8a3ab9, #3897f0);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(255, 0, 157, 0.458);
+    margin-top: 50px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+.welcome-page h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+    color: white;  /* تغيير اللون إلى الأبيض */
+}
+
+.welcome-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.welcome-page h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.welcome-page button {
+    padding: 12px 25px;
+    background-color: #ffffff;
+    color: #3897f0;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.welcome-page button:hover {
+    background-color: #e1e1e1;
+}
+
+/* تنسيق صفحة تسجيل الدخول */
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.453);
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.login-container .logo {
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+
+.login-container input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    color: #333;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.login-container button {
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #3897f0;
+    color: white;
+    width: 100%;
+}
+
+.login-container button:hover {
+    background-color: #318ce7;
+}
+
+.divider {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+}
+
+.facebook-button {
+    padding: 14px;
+    background-color: #3b5998;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.facebook-button:hover {
+    background-color: #2d4373;
+}
+
+.forgot {
+    margin-top: 15px;
+    color: #3897f0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries لتناسب الهواتف */
+@media screen and (max-width: 600px) {
+    .welcome-page h1 {
+        font-size: 24px;
+    }
+
+    .welcome-page button {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-container input {
+        padding: 12px;
+    }
+
+    .login-container button {
+        padding: 12px;
+    }
+
+    .facebook-button {
+        padding: 12px;
+    }
+}
